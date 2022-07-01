@@ -1,0 +1,128 @@
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	font-family: 'Ubuntu', sans-serif;
+}
+
+body{
+	padding-top: 30px;
+}
+
+.title{
+	text-align: center;
+	font-size: 45px;
+	padding-bottom: 20px;
+}
+
+.container {
+	width: 450px;
+	margin: 0 auto;
+	border-radius: 20px;
+	padding: 20px;
+	background-color: rgba(117,207,234 , 9);
+	display: flex;
+	flex-direction: column;
+	position: relative;
+}
+
+.place , .temp , .tempData {
+	font-size: 45px;
+	font-weight: bold;
+	color: white;
+}
+
+.place{
+	overflow: hidden;
+	width: 80%;
+}
+
+.stan, .tempFill , .feelData{
+	font-size: 30px;
+	color: white;
+}
+
+.icon{
+	width: 60px;
+	height: 60px;
+	position: absolute;
+	padding: 0;
+	top: 10px;
+	right: 10px;
+}
+
+
+.forma{
+	display: flex;
+	flex-direction: column;
+	gap: 5px;
+	margin: 0 auto;
+	width: 450px;
+	padding-top: 30px;
+	border-radius: 20px;
+}
+
+input{
+	border-radius: 20px;
+	padding: 5px;
+	border: 2px solid black;
+	outline: 0;
+	width: 100%;
+	margin: 0 auto;
+	font-size: 25px;
+}
+
+input::placeholder{
+	font-size: 18px;
+}
+
+.send{
+	font-weight: bold;
+	cursor: pointer;
+}
+
+@media screen and (max-width: 500px) {
+	.forma{
+		width: 350px;
+	}
+
+	.container{
+		width: 350px;
+	}
+
+	.stan, .tempFill , .feelData{
+		font-size: 25px;
+	}
+
+	.place , .temp , .tempData {
+		font-size: 40px;
+	}
+}
+
+
+
+@media screen and (max-width: 500px) {
+	.forma{
+		width: 290px;
+	}
+
+	.title{
+		font-size: 35px;
+	}
+
+	.container{
+		width: 290px;
+	}
+
+	.stan, .tempFill , .feelData{
+		font-size: 20px;
+	}
+
+	.place , .temp , .tempData {
+		font-size: 30px;
+	}
+
+	input{
+		font-size: 20px;
+	}
+}

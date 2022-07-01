@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;1,200&family=Ubuntu:ital,wght@0,400;1,300&display=swap" rel="stylesheet">
+	<title>Wether</title>
+</head>
+<body>
+	<h1 class="title">Weather widget</h1>
+	<div class="container">
+		<div class="place">Kyiv</div>
+		<div class="stan">Sunny</div>
+		<div class="temp"><span class='tempData'>24</span> °C</div>
+		<div class="tempFill">Feels like <span class='feelData'>23</span> °C</div>
+		<img src="sunny.png" class= 'icon'>
+	</div>
+	<form action="" class="forma">
+		<input type="text" class="latInp" placeholder="Enter latitude">
+		<input type="text" class="lonInp" placeholder="Enter longitude">
+		<input type="button" class="send" value="Send" onclick="loadWeather()">
+	</form>
+
+	<script type="text/javascript" src="script.js"></script>
+</body>
+</html>
