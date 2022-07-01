@@ -101,7 +101,7 @@ input::placeholder{
 
 
 
-@media screen and (max-width: 500px) {
+@media screen and (max-width: 390px) {
 	.forma{
 		width: 290px;
 	}
