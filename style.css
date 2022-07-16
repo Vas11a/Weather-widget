@@ -132,4 +132,9 @@ input::placeholder{
 	input{
 		font-size: 20px;
 	}
+
+	.subTitle {
+		font-size: 25px;
+		padding: 5px 0;
+	}
 }
