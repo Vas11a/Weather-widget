@@ -2,14 +2,21 @@
 const weather = document.querySelector('.container');
 const latInp = document.querySelector('.latInp');
 const lonInp = document.querySelector('.lonInp');
+const cityName = document.querySelector('.cityName');
 
 
 async function loadWeather (e) {
 	weather.innerHTML = `<div class = 'place'>Wait...</div>`
+	let city = cityName.value;
 	let lat = latInp.value;
 	let lon = lonInp.value;
-	
-	const server = `https://api.openweathermap.org/data/2.5/weather?lat=${lat}&lon=${lon}&appid=aec213058af3596a38a337c6e2f26d41`;
+
+	if (city != '') {
+		var server = `https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=aec213058af3596a38a337c6e2f26d41`
+	} else{
+		var server = `https://api.openweathermap.org/data/2.5/weather?lat=${lat}&lon=${lon}&appid=aec213058af3596a38a337c6e2f26d41`;
+	}
+
 	const response = await fetch(server, {
 		method: 'GET',
 	});
