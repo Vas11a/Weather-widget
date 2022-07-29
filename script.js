@@ -6,7 +6,7 @@ const cityName = document.querySelector('.cityName');
 
 
 async function loadWeather (e) {
-	weather.innerHTML = `<div class = 'place'>Wait...</div>`
+	weather.innerHTML = `<div class = 'place'>Wait...</div>`;
 	let city = cityName.value;
 	let lat = latInp.value;
 	let lon = lonInp.value;
@@ -52,3 +52,7 @@ function getWether (data) {
 	weather.innerHTML = templ;
 }
 
+function clearInput(e) {
+	let cityToClear = cityName.value;
+	cityName.value = '';
+}
